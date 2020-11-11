@@ -1,16 +1,55 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>홍길동 홈페이지 </h1>
+    <head>
+        <style>
+        body {
+          font-size: 28px;
+        }
+        
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+          position: -webkit-sticky; /* Safari */
+          position: sticky;
+          top: 0;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover {
+          background-color: #111;
+        }
+        
+        .active {
+          background-color: #4CAF50;
+        }
+        </style>
+        </head>
 
-<img src="./image/img1.jpg">
-<div >
-    자주가는 링크
-    <ul>
-        <li><a href="https://www.youtube.com/" target="_blank">유튜브</a></li> 
-        <li><a href="http://www.chungwoon.ac.kr" target="if1">청운대</a></li>         
-    </ul>    
-</div>
-<a href="./html/profile.htm" target="if1">나의 소개</a>
-</body>
+    <body>
+        <div class="header">
+            <h2>홍길동 홈페이지</h2>
+        </div>  
+        <ul>
+            <li><a class="active" href="./html/hgd_home.htm" target="if_hgd">Home</a></li>
+            <li><a href="http://www.chungwoon.ac.kr" target="if_hgd">청운대</a></li>
+            <li><a href="http://cyber.chungwoon.ac.kr" target="if_hgd"> 이클래스</a></li>
+        </ul>
+        <iframe src="./html/hgd_home.htm" name="if_hgd" height="600px" width="100%" title="Iframe Example"></iframe>
+      
+        <h3>홍길동 홈페이지 : 인천광역시 남구 숙골로 113 청운대학교 컴퓨터공학과</h3> 
+    </body>
 </html>
