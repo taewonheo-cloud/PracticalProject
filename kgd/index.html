@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        body {
+          font-size: 20px;
+        }
+        
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+          position: -webkit-sticky; /* Safari */
+          position: sticky;
+          top: 0;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover {
+          background-color: #111;
+        }
+        
+        .active {
+          background-color: #4CAF50;
+        }
+        </style>
+        </head>
+
+    <body>
+        <div style="color: white;
+             text-shadow: 2px 2px 4px #000000; 
+             font-size: 1.5em;">
+             <h2>김길동 홈페이지</h2>
+        </div>  
+        <ul>
+            <li><a class="active" href="./html/kgd_home.htm" target="if_kgd">Home</a></li>
+            <li><a href="https://newdelee.github.io/PracticalProject" target="_parent">실무프로젝트</a></li>
+            <li><a href="./html/profile1.htm" target="if_kgd"> 나의 프로필 1 </a></li>
+            <li><a href="./html/profile2.htm" target="if_kgd"> 나의 프로필 2 </a></li>
+            <li><a href="./html/profile3.htm" target="if_kgd"> 나의 프로필 3 </a></li>
+        </ul>
+        <iframe src="./html/kgd_home.htm" name="if_kgd" height="600px" width="100%" style="border:1px;"></iframe>
+
+        <hr>
+
+        <h5>Address: 인천광역시 남구 숙골로 113 청운대학교 컴퓨터공학과</h5> 
+    </body>
+</html>
